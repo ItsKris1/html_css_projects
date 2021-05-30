@@ -1,0 +1,176 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d9e9f3;
+}
+
+:root {
+  --custom-box-shadow: 0px 2px 5px rgb(88, 83, 83);
+}
+
+/* Header */
+header {
+  background-image: url("/images/john_lennon.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  padding: 50px;
+  box-shadow: var(--custom-box-shadow);
+}
+
+#title {
+  text-align: right;
+  font-size: 60px;
+  text-shadow: 0px 5px 15px white;
+}
+
+h2.subtitle {
+  text-align: right;
+  margin-top: 5px;
+  font-size: 20px;
+  line-height: 30px;
+  text-shadow: 0px 5px 15px rgb(134, 127, 127);
+}
+/* Header end */
+
+/* Section John info */
+section.john-info {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr;
+  width: 70%;
+  margin: auto;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  background-color: #d7dee2;
+  border-radius: 10px;
+  box-shadow: var(--custom-box-shadow);
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+  border-top-left-radius: 10px;
+  border-bottom: 1px solid rgb(124, 116, 116);
+}
+
+#img-caption {
+  text-align: center;
+  padding: 7px;
+}
+.introduction-title {
+  font-size: 30px;
+  margin: 30px;
+}
+
+#tribute-info {
+  font-size: 20px;
+  line-height: 30px;
+  margin: 25px;
+}
+/* Section John info end */
+@media only screen and (max-width: 909px) {
+  header {
+    background-image: none;
+    height: auto;
+    text-align: center;
+  }
+
+  section.john-info {
+    grid-template-columns: none;
+    grid-template-rows: auto auto;
+    width: 100%;
+  }
+}
+
+/* Section history */
+section.history {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 70%;
+  margin: auto;
+  margin-top: 150px;
+  background-color: #d7dee2;
+  box-shadow: var(--custom-box-shadow);
+  border-radius: 10px;
+}
+
+.history-title {
+  text-align: center;
+  font-size: 40px;
+  padding: 30px;
+}
+article.box {
+  padding: 30px;
+  border-bottom: 1px solid gray;
+}
+
+#last-box {
+  padding: 30px;
+}
+
+h3.box-title {
+  padding: 15px;
+  font-size: 25px;
+}
+
+p.box-text {
+  padding: 5px 15px 15px 15px;
+  line-height: 30px;
+  font-size: 20px;
+}
+/* Section history end */
+
+@media only screen and (max-width: 909px) {
+  section.history {
+    width: 100%;
+  }
+}
+
+/* Footer */
+footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  background-color: #d7dee2;
+  margin-top: 150px;
+  height: 150px;
+  box-shadow: 0px -1px 5px rgb(88, 83, 83);
+}
+
+h2.footer-title {
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-text {
+  text-align: center;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 909px) {
+  footer {
+    height: auto;
+  }
+
+  #title {
+    text-align: center;
+  }
+
+  h2.subtitle {
+    text-align: center;
+  }
+  h2.footer-title {
+    padding: 15px;
+  }
+
+  #image {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+  }
+}
