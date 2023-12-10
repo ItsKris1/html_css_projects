@@ -1,4 +1,5 @@
-# HTML & CSS projects
+# Projects description
+Different HTML & CSS projects built for applying knowledge gained from freeCodeCamp Resposnive Web Design course
 I got the project ideas from freeCodeCamp Resposnive Web Design course. These projects **are developed by me**.
 
 ### Personal portfolio
